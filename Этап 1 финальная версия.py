@@ -1,0 +1,10 @@
+username = input('Введите ваше имя')
+title = input('Введите заголовок заметки')
+title2 = input('Введите заголовок заметки')
+title3 = input('Введите заголовок заметки')
+content = input('Введите описание заметки')
+status = input('Введите статус заметки')
+created_date = input('Введите дату создания заметки в формате дд-мм-гг')
+issue_date = input('Введите дату истечения заметки в формате дд-мм-гг')
+note = {'Имя': username, 'Описание': content, 'Статус': status, 'Дата создания': created_date[0:5], 'Дедлайн': issue_date[0:5], 'Заголовки заметки': [title, title2, title3]}
+print(note)
